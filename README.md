@@ -22,9 +22,6 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-### Screenshot
-
-![](images\Web capture_28-8-2022_114428_127.0.0.1.jpeg)
 
 
 
