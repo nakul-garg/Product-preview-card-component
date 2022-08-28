@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+:root {
+    --green:hsl(158, 36%, 37%)
+  }
+body{
+    background: hsl(30, 38%, 92%)000;
+    display: flex;
+    height: 97vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.image{
+    width: 316px;
+    height: 449px;
+    border-radius:15px 0 0 15px;
+    background-image: url('images/image-product-desktop.jpg');
+    background-size: contain;
+}
+.productdet{
+    width: 284px;
+    height: 463px;
+    padding: 16px;
+}
+.type{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 38px;
+    color: hsl(228, 12%, 48%);
+}
+.name{
+    margin-top: 17px;
+    margin-bottom: 10px;
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    font-weight:bolder;
+    color: hsl(212, 21%, 14%);
+}
+.des{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+.prices{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 32px 18px 0;
+    text-align: center;
+    justify-content: center;
+
+}
+.newprice{
+    font-size: 38px;
+    font-family: 'Fraunces', serif;
+    color:var(--green);
+}
+.oldprice{
+    margin: 8px 0px 6px 35px;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+.btna{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+}
+.cart{
+    display: block;
+    border: none;
+    background: var(--green);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 8px;
+    width: 100%;
+    font-weight: 700;
+}
+.shpcart {
+    width: 15px;
+    height: 15px;
+    filter: invert(100%);
+    margin-right: 8px;
+    font-weight: 700;
+  }
+  @media only screen and (max-width:660px) {
+    .content{
+        width:350px;
+        flex-direction: column;
+        height: 630px;
+    }
+    .image{
+        width: 350px;
+        height: 300px;
+        background-image: url(images/image-product-mobile.jpg);
+        border-radius: 15px 15px 0 0;
+        background-size:cover;
+    }
+    .productdet{
+        padding:30px;
+        width: 300px;
+    }
+    .type{
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    .name{
+        margin-top: 15px;
+        font-size: 33px;
+    }
+    .des{
+        font-size: 14px;
+        margin-bottom: 33px;
+
+    }
+    .newprice{
+        margin-left: 0;
+    }
+    .prices{
+        margin: 3px 0px 20px 0px;
+        justify-content: flex-start;
+    }
+    .btna{
+        padding: 8px 0;
+    }
+  }
